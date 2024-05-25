@@ -1,7 +1,12 @@
-import React from 'react';
+import React from "react";
+import AppRoutes from "./routes/AppRoutes";
+import { BrowserRouter } from "react-router-dom";
+import "./styles.css";
 
-const App = () => <h1>UK Energy Mix</h1>;
+const App = () => (
+  <BrowserRouter>
+    <AppRoutes />
+  </BrowserRouter>
+);
 
-export {
-    App
-}
+export { App };
