@@ -2,7 +2,8 @@
   "private": true,
   "scripts": {
     "test": "jest",
-    "start": "webpack-dev-server --hot --progress"
+    "start": "webpack-dev-server --hot --progress",
+    "build": "webpack --mode production"
   },
   "dependencies": {
     "@types/eslint-scope": "^3.7.7",
