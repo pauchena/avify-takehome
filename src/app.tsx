@@ -4,9 +4,11 @@ import { BrowserRouter } from "react-router-dom";
 import "./styles.css";
 
 const App = () => (
-  <BrowserRouter>
-    <AppRoutes />
-  </BrowserRouter>
+  <React.StrictMode>
+    <BrowserRouter>
+      <AppRoutes />
+    </BrowserRouter>
+  </React.StrictMode>
 );
 
 export { App };

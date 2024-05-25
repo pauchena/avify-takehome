@@ -6,6 +6,7 @@ module.exports = {
         colors: {
           customColors: {
             lightViolet: '#5c32d5',
+            lightVioletTransparent: 'rgba(167, 139, 250, 0.5)'
           },
         },
       },

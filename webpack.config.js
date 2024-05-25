@@ -53,6 +53,7 @@ module.exports = {
         })
     ],
     devServer: {
+        historyApiFallback: true,
         port,
         host,
         static: path.resolve(__dirname, 'src')
