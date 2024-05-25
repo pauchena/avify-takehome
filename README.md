@@ -4,8 +4,8 @@ This react application displays the current mix of energy generation in the UK. 
 
 ## Features
 
-BarChart: A static bar chart that shows the energy generation mix in the UK every half hour.
-PieChart: A pie chart component to filter the energy generation data by date. [WIP]
+- BarChart: A static bar chart that shows the energy generation mix in the UK every half hour.
+- PieChart: A pie chart component to filter the energy generation data by date. [WIP]
 
 ## How to run the app?
 
