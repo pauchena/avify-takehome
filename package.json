@@ -26,7 +26,10 @@
     "@babel/preset-react": "^7.22.5",
     "@babel/preset-typescript": "^7.22.5",
     "@babel/runtime": "^7.22.6",
+    "@testing-library/jest-dom": "^4.2.4",
+    "@testing-library/react": "^15.0.7",
     "@types/jest": "^29.5.2",
+    "@types/node": "^20.12.12",
     "babel-jest": "^29.6.0",
     "babel-loader": "^9.1.2",
     "css-loader": "^7.1.2",
@@ -38,7 +41,9 @@
     "eslint-plugin-react-hooks": "^4.6.2",
     "eslint-scope": "^8.0.1",
     "html-webpack-plugin": "^5.5.3",
-    "jest": "^29.6.0",
+    "jest": "^29.7.0",
+    "jest-environment-jsdom": "^29.7.0",
+    "jest-fetch-mock": "^3.0.3",
     "jest-transform-stub": "^2.0.0",
     "mini-css-extract-plugin": "^2.7.6",
     "postcss": "^8.4.38",
@@ -53,6 +58,10 @@
     "webpack-dev-server": "^4.15.1"
   },
   "jest": {
+    "testEnvironment": "jsdom",
+    "setupFilesAfterEnv": [
+      "<rootDir>/setupTests.ts"
+    ],
     "testRegex": "\\.(test|spec)\\.(j|t)sx?$",
     "transform": {
       "^.+\\.jsx?$": "babel-jest",

@@ -3,6 +3,7 @@ import { Route, Routes } from "react-router-dom";
 
 import Layout from "../pages/Layout";
 import BarChart from "../components/BarChart";
+import PieChart from "../components/PieChart";
 
 const AppRoutes = () => (
   <Routes>
@@ -11,6 +12,14 @@ const AppRoutes = () => (
       element={
         <Layout>
           <BarChart />
+        </Layout>
+      }
+    />
+    <Route
+      path="/piechart"
+      element={
+        <Layout>
+          <PieChart />
         </Layout>
       }
     />
