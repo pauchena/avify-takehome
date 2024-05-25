@@ -31,11 +31,9 @@ module.exports = {
                 use: 'babel-loader',
             },
             {
-                test: /\.css$/,
-                use: [
-                    MiniCssExtractPlugin.loader,
-                    'css-loader'
-                ]
+                test: /\.css$/i,
+                include: path.resolve(__dirname, 'src'),
+                use: ['style-loader', 'css-loader', 'postcss-loader'],
             },
             {
                 test: /\.(png|jpg|gif)$/,
@@ -46,7 +44,8 @@ module.exports = {
     plugins: [
         new HtmlWebpackPlugin({
             filename: 'index.html',
-            template: 'index.html'
+            template: 'index.html',
+            favicon: '../public/avify-logo.png'
         }),
         new MiniCssExtractPlugin({
             filename: '[name]-[contenthash:6].css',
